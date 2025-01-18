@@ -9,6 +9,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     </head>
     
 <body>
@@ -356,6 +357,163 @@
             </div>
         </section>
     </section>
+    <section id="styleguide">
+        <div class="container">
+            <h1 class="text-center">Style Guide in Project</h1>
+    
+            <!-- Tab Buttons -->
+            <div class="tabs">
+                <div class="tab-button active" onclick="showTab(1)">File và Directory</div>
+                <div class="tab-button" onclick="showTab(2)">Color pallete</div>
+                <div class="tab-button" onclick="showTab(3)">Typography</div>
+            </div>
+    
+            <!-- Tab Content -->
+            <div id="tab1" class="tab-content active">
+                <p><b>Cấu trúc tổng quan của project nhóm</b></p><br>
+                <p>Trong một trang web sẽ có 4 phần thứ nhất là page thứ hai là style thể hiện được phong cách của trang web thứ ba là làm như thế nào cho trang web chạy và cuối cùng là hình ảnh cho trang web sinh động. Dưới đây là cấu trúc của project:</p><br>
+                <p>
+                    asset <br>
+                    ├── style/                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Thư mục chứa tất cả các file CSS <br>
+                    │   &nbsp;&nbsp;&nbsp;&nbsp;├── login.css             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Style cho trang login <br>
+                    │   &nbsp;&nbsp;&nbsp;&nbsp;├── location.css          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Style cho trang vị trí<br>
+                    │   &nbsp;&nbsp;&nbsp;&nbsp;├── introduction.css      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Style cho trang giới thiệu<br>
+                    │   &nbsp;&nbsp;&nbsp;&nbsp;├── index.css             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Style cho trang Chủ<br>
+                    │   &nbsp;&nbsp;&nbsp;&nbsp;├── demo1.css             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Style cho trang loại bánh<br>
+                    │   &nbsp;&nbsp;&nbsp;&nbsp;├── demo.css              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Style cho trang chi tiết mỗi bánh<br>
+                    │   &nbsp;&nbsp;&nbsp;&nbsp;├── cart.css              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Style cho trang giỏ hàng<br>
+                    │   &nbsp;&nbsp;&nbsp;&nbsp;├── banh1.css             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Style cho trang bánh<br>
+                    ├── img/                        v&nbsp;&nbsp;&nbsp;&nbsp;# Thư mục chứa tất cả hình ảnh<br>
+                    │   &nbsp;&nbsp;&nbsp;&nbsp;├── logo.png              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Logo của website<br>
+                    │   &nbsp;&nbsp;&nbsp;&nbsp;├── background.jpg        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Hình nền chung của website<br>
+                    │   &nbsp;&nbsp;&nbsp;&nbsp;├── sp1                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Hình ảnh sản phẩm 1<br>
+                    │   &nbsp;&nbsp;&nbsp;&nbsp;├── sp2                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Hình ảnh sản phẩm 2<br>
+                    ├── js/                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Thư mục chứa tất cả các file JavaScript<br>
+                    │   &nbsp;&nbsp;&nbsp;&nbsp;├── login.js              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Chức năng trang login<br>
+                    │   &nbsp;&nbsp;&nbsp;&nbsp;├── cart.js               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Chức năng trang giỏ hàng<br>
+                    │   &nbsp;&nbsp;&nbsp;&nbsp;├── banh1.js                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Chức năng trang bánh<br><p>(và các chức năng khác)</p>
+                    ├── login.html                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Trang đăng nhập(đăng ký)<br>
+                    ├── location.html             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Trang tìm kiếm vị trí<br>
+                    ├── introduction.html         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Trang giới thiệu<br> 
+                    ├── index.html                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Trang Chủ<br>
+                    ├── demo1.html                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Trang tổng hợp các loại bánh<br>
+                    ├── demo.html                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Trang chi tiết các loại bánh<br>
+                    ├── cart.html                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Trang giỏ hàng<br>
+                    ├── banh1.html                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Trang chi tiết mỗi loại bánh<br>
+                    ├── README.md                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# File tài liệu hướng dẫn sử dụng project <br>
+                </p>
+                <p><b>Quy tắc đặt tên</b></p><br>
+                <p><b>Thư mục</b></p><br>
+                &nbsp;&nbsp;<p>Tạo một thư mục lớn có tên có nghĩa để lưu trữ các thư mục gốc như style js img. Sử dụng tiếng Anh để dễ làm việc với nhau vì tiếng Anh là tiếng quốc tế. Không dấu, không khoảng trắng, tốt nhất lên viết thường.</p><br>
+                <p><b>File</b></p><br>
+                &nbsp;&nbsp;<p>Tên file phải có nghĩa với chủ đề nội dung của nó và sử dụng chữ thường</p><br>
+                <p><b>Chức năng của các thư mục</b></p><br>
+                <p>Tùy vào các thư mục sẽ có các chức năng khác nhau, thư mục js/ sẽ có chức năng làm cho cái gì đó hoạt động được, thư mục style/ sẽ làm cho trang sống động hơn, thân thiện với người dùng hơn, thư mục img/ chứa các ảnh liên quan đến trang web</p>
+                <p><b>Chức năng của các file</b></p><br>
+                <p>Tạo ra các nền móng cơ bản của trang web nhưng chưa được sống động, nhưng bootrap 5 có thể làm nó sống động hơn.</p>
+            </div>
+            <div id="tab2" class="tab-content">
+                <h1>Màu Sắc</h1>
+
+            <div class="section">
+                <h2>Màu cơ bản:</h2>
+                <div class="color-sample" style="background-color: #CA7F5C;"><span class="color-name">Nâu ấm:</span> #CA7F5C</div>
+                <div class="color-sample" style="background-color: #FFFFFF;"><span class="color-name">Trắng:</span> #FFFFFF</div>
+            </div>
+
+            <div class="section">
+                <h2>Màu phụ:</h2>
+                <div class="color-sample" style="background-color: #F8F9FA;"><span class="color-name">Xám nhạt:</span> #F8F9FA</div>
+                <div class="color-sample" style="background-color: #F6F4EF;"><span class="color-name">Trắng kem nhạt:</span> #F6F4EF</div>
+            </div>
+
+            <div class="section">
+                <h2>Màu nhấn:</h2>
+                <div class="color-sample" style="background-color: #DC3545;"><span class="color-name">Nâu ấm đậm:</span> #DC3545</div>
+                <div class="color-sample" style="background-color: #007BFF;"><span class="color-name">Xanh biển:</span> #007BFF</div>
+            </div>
+
+            <div class="section">
+                <h2>Màu trung tính:</h2>
+                <div class="color-sample" style="background-color: #6C757D;"><span class="color-name">Xám:</span> #6C757D</div>
+                <div class="color-sample" style="background-color: #E9ECEF;"><span class="color-name">Xám nhạt:</span> #E9ECEF</div>
+            </div>
+
+            <div class="section">
+                <h2>Sử dụng màu sắc:</h2>
+                <div class="color-sample"><span class="color-name">Chữ chính:</span> Đen (#000000) trên nền trắng (#FFFFFF)</div>
+                <div class="color-sample" style="background-color: #CA7F5C; color: #FFFFFF;"><span class="color-name">Chữ phụ 1:</span> Trắng (#FFFFFF) trên nền nâu ấm (#CA7F5C)</div>
+                <div class="color-sample" style="background-color: #F6F4EF; color: #000000;"><span class="color-name">Chữ phụ 2:</span> Đen (#000000) trên nền trắng kem nhạt (#F6F4EF)</div>
+            </div>
+
+            <div class="section">
+                <h2>Nút và liên kết:</h2>
+                <div class="button-example button-main1">Nút chính 1: Nền nâu ấm (#CA7F5C) với chữ trắng (#FFFFFF)</div>
+                <div class="button-example button-main2">Nút chính 2: Nền xanh biển (#007BFF) với chữ trắng (#FFFFFF)</div>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="section">
+                <h2>Viền và đường kẻ:</h2>
+                <div class="color-sample" style="border: 1px solid #6C757D;"><span class="color-name">Viền và đường kẻ:</span> #6C757D</div>
+            </div>
+
+            <div class="section">
+                <h2>Màu chữ:</h2>
+                <div class="color-sample"><span class="color-name">#333:</span> Chủ yếu dùng cho tiêu đề và văn bản chính, tạo sự rõ ràng và dễ đọc.</div>
+                <div class="color-sample"><span class="color-name">#777:</span> Dùng cho văn bản phụ, giảm bớt sự chú ý so với nội dung chính.</div>
+                <div class="color-sample" style="background-color: #FFFFFF; color: #000000;"><span class="color-name">#fff:</span> Dùng cho nền và chữ trắng, thường cho thông báo quan trọng hoặc tiêu đề nổi bật.</div>
+                <div class="color-sample" style="background-color: #A57C68; color: #FFFFFF;"><span class="color-name">#A57C68:</span> Màu đỏ đậm dùng để làm nổi bật các yếu tố như biểu tượng và tiêu đề.</div>
+            </div>
+            </div>
+            <div id="tab3" class="tab-content">
+                <h1>Typography Style Guide</h1>
+
+            <div class="content">
+                <h2>1. Font chữ</h2>
+                <p>Font chính: <strong>Nunito, sans-serif</strong> (import từ Google Fonts).</p>
+                <p>Font chữ này được sử dụng trên toàn bộ website, đem lại cảm giác hiện đại và thân thiện, phù hợp với chủ đề tiệm bánh.</p>
+
+                <h2>Định dạng chữ đậm (font-weight)</h2>
+                <p><strong>Chữ tiêu đề:</strong> sử dụng font-weight: <strong>bold (700)</strong>, tạo điểm nhấn.</p>
+                <p><strong>Nội dung thông thường:</strong> sử dụng font-weight: <strong>400</strong>.</p>
+
+                <h2>2. Kích thước chữ</h2>
+                <p><strong>Chữ nội dung:</strong> Kích thước chữ mặc định: <strong>1rem</strong> (16px trên phần lớn trình duyệt).</p>
+                <p><strong>Chữ tiêu đề:</strong></p>
+                <ul>
+                    <li>Tiêu đề sản phẩm: 16px.</li>
+                    <li>Tiêu đề lớn như "MamMam Cake Favourites": 3rem (48px).</li>
+                </ul>
+
+                <h2>3. Màu sắc chữ</h2>
+                <p><strong>Màu chữ chính:</strong> Sử dụng màu sắc trung tính như: <span style="color: #333;">#333</span> (nội dung thông thường) và <span style="color: #A57C68;">#A57C68</span> (tiêu đề ở footer).</p>
+                <p><strong>Chữ trên thanh thông báo:</strong> Màu trắng (<span style="color: #FFFFFF;">#FFFFFF</span>) kết hợp nền nâu nhạt (<span style="color: #CA7F5C;">#CA7F5C</span>) tạo sự nổi bật.</p>
+
+                <h2>4. Khoảng cách và căn chỉnh</h2>
+                <p><strong>Khoảng cách giữa các dòng chữ:</strong> Không được xác định cụ thể trong CSS nhưng mặc định của font-family Nunito đã tối ưu khoảng cách giữa các dòng, đem lại cảm giác thoải mái khi đọc.</p>
+                <p><strong>Căn lề:</strong> Chủ yếu sử dụng text-align: <strong>center</strong> hoặc căn chỉnh đều (<strong>justify</strong>).</p>
+
+                <h2>5. Hiệu ứng liên quan đến typography</h2>
+                <p><strong>Hover text:</strong> Khi người dùng rê chuột qua các liên kết, màu chữ thay đổi hoặc được nhấn mạnh:</p>
+                <p class="link-hover">Hãy thử rê chuột qua liên kết này để xem hiệu ứng.</p>
+
+                <p><strong>Hiệu ứng mờ chữ trong ảnh chính (Hero Section):</strong></p>
+                <p class="hero-text">Đây là văn bản trong Hero Section. Khi rê chuột qua sẽ thay đổi độ mờ.</p>
+            </div>
+
+            <div class="alert">
+                Đây là một thanh thông báo với chữ trắng trên nền nâu nhạt.
+            </div>
+
+            <h2 class="footer-title">Tiêu đề ở footer với màu #A57C68</h2>
+            </div>
+        </div>
+    </section>
     <script src="asset/js/script.js"></script>
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
