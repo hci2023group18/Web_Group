@@ -58,3 +58,24 @@ function openTab(evt, tabName) {
 
 // Mở tab Week1 mặc định khi trang web tải
 document.getElementsByClassName("tab-button")[0].click();
+
+// Function to switch tabs
+function showTab(tabIndex) {
+    // Remove 'active' class from all tab buttons
+    const buttons = document.querySelectorAll('.tab-button');
+    buttons.forEach(button => {
+        button.classList.remove('active');
+    });
+
+    // Add 'active' class to the clicked button
+    buttons[tabIndex - 1].classList.add('active');
+
+    // Hide all tab contents
+    const contents = document.querySelectorAll('.tab-content');
+    contents.forEach(content => {
+        content.classList.remove('active');
+    });
+
+    // Show the clicked tab's content
+    document.getElementById('tab' + tabIndex).classList.add('active');
+}
